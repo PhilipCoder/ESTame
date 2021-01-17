@@ -4,7 +4,11 @@
  * @param {object} containerInstance 
  */
 module.exports = (nameSpace, containerInstance) => {
-    if (nameSpace.indexOf("/") === -1) {
-        try { require(`estame.${nameSpace}`)(nameSpace, containerInstance)} catch (e) {}
-    }
+    let moduleName = nameSpace.indexOf("/") > -1 ? nameSpace.substring(nameSpace.lastIndexOf("/") + 1) : nameSpace;
+    try {
+        let container = require(`estame.${moduleName}`);
+        if (container.nameSpaces[nameSpace]){
+            container.init(moduleName, containerInstance);
+        }
+    } catch (e) { }
 };

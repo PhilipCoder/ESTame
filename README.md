@@ -18,7 +18,7 @@ ESTame is an expandable NodeJS web development framework consisting out of multi
 
 ## Getting Started
 
-The ESTame injection module can be installed via NPM:
+The ESTame module can be installed via NPM:
 
 ```javascript
 npm install estame

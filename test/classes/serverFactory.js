@@ -1,6 +1,11 @@
-const serverFactory = (nameSpace, containerInstance) => {
+const init = (nameSpace, containerInstance) => {
     containerInstance.add("server", require("./server.js"));
     containerInstance.add("server/service", require("./service.js"));
 };
 
-module.exports = serverFactory;
+const nameSpaces = {
+    "server" : true,
+    "server/service" : true
+};
+
+module.exports = {init ,nameSpaces};

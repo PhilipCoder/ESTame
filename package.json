@@ -1,8 +1,8 @@
 {
   "name": "estame",
   "version": "0.0.2",
-  "description": "A small but powerful dependency injection famework.",
-  "main": "iocContainer.js",
+  "description": "ESTame is an expandable NodeJS web development framework consisting out of multiple modules.",
+  "main": "estame.js",
   "directories": {
     "test": "test"
   },
@@ -16,23 +16,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PhilipCoder/EStame-DependencyInjection.git"
+    "url": "git+https://github.com/PhilipCoder/ESTame.git"
   },
   "keywords": [
-    "Proxies",
-    "Assignables"
+    "NodeJS",
+    "Web",
+    "JavaScript"
   ],
   "author": "Philip Schoeman",
   "license": "LGPL-2.1-only",
   "bugs": {
-    "url": "https://github.com/PhilipCoder/EStame-DependencyInjection/issues"
+    "url": "https://github.com/PhilipCoder/ESTame/issues"
   },
-  "homepage": "https://github.com/PhilipCoder/EStame-DependencyInjection#readme",
+  "homepage": "https://github.com/PhilipCoder/ESTame#readme",
   "files": [
-    "/iocContainer.js",
-    "/ProxyHandlers",
-    "/state",
-    "/types"
+    "/estame.js",
+    "/moduleLoaderFactory.js"
   ],
   "dependencies": {
     "estame.di": "0.0.3"
