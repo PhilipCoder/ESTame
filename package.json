@@ -1,6 +1,6 @@
 {
   "name": "estame",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "ESTame is an expandable NodeJS web development framework consisting out of multiple modules.",
   "main": "estame.js",
   "directories": {
@@ -34,7 +34,7 @@
     "/moduleLoaderFactory.js"
   ],
   "dependencies": {
-    "estame.di": "^0.0.6"
+    "estame.di": "^0.0.7"
   },
   "_moduleAliases": {
     "estame.server": "test/classes/serverFactory.js"
