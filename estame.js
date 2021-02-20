@@ -8,7 +8,7 @@ class estame {
     static new() {
         const container = new iocContainer([moduleLoaderFactory]);
         container.addSingleton("estame", estame);
-        return new (container.get("estame"))();
+        return container.get("estame");
     }
 }
 
